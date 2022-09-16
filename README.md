@@ -1,2 +1,1 @@
-# Kochin_Furniture
-Kochin Furniture Website
+# kf.github.io
