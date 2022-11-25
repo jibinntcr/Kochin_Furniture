@@ -222,7 +222,12 @@
             </div>
             <div class="col-md-6">
               <div class="wow fadeInUp" data-wow-delay="0.5s">
-                <form>
+                <form
+                  action="mail.php"
+                  method="POST"
+                  enctype="multipart/form-data"
+                  autocomplete="off"
+                >
                   <div class="row g-3">
                     <div class="col-md-6">
                       <div class="form-floating">
@@ -230,7 +235,9 @@
                           type="text"
                           class="form-control"
                           id="name"
+                          name="name"
                           placeholder="Your Name"
+                          required
                         />
                         <label for="name">Your Name</label>
                       </div>
@@ -241,7 +248,9 @@
                           type="email"
                           class="form-control"
                           id="email"
+                          name="email"
                           placeholder="Your Email"
+                          required
                         />
                         <label for="email">Your Email</label>
                       </div>
@@ -252,7 +261,9 @@
                           type="text"
                           class="form-control"
                           id="subject"
+                          name="subject"
                           placeholder="Subject"
+                          required
                         />
                         <label for="subject">Subject</label>
                       </div>
@@ -264,12 +275,19 @@
                           placeholder="Leave a message here"
                           id="message"
                           style="height: 150px"
+                          name="message"
+                          id="message"
+                          required
                         ></textarea>
                         <label for="message">Message</label>
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100 py-3" type="submit">
+                      <button
+                        class="btn btn-primary w-100 py-3"
+                        type="submit"
+                        name="submit"
+                      >
                         Send Message
                       </button>
                     </div>
